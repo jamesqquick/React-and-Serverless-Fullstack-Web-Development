@@ -193,17 +193,17 @@ Here's what you will learn.
 
 ## 10. Hosting in Netlify
 
-### Create Netlify Configurations
+### Create Deployment Configurations
 
 - add Netlify.toml configuration file
 - add `prod` script in package.json
 
-### Create Netlify Site
+### Creat and Deploy Your Netlify Site
 
 - create new website in Netlify
 - connect to our Github repo
 
-###                           t Wrap Up
+### Wrap Up
 
 - course summary and what we accomplished
 - next steps and ideas for additional features
