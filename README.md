@@ -18,13 +18,13 @@ Here's what you will learn.
 ## 1. Course Overview and Project Setup
 
 
-### Course Overview and Resources
+### 1. Course Overview and Resources
 
 - welcome to the course
 - what we will cover
 - links to resources used in the class
 
-### Create Starter React Project
+### 2. Create Starter React Project
 
 
 - use `create-react-app` to generate starter project
@@ -33,8 +33,7 @@ Here's what you will learn.
 - connect local code to Github repo
 
 
-
-### Add routing with React Router
+### 3. Add routing with React Router
 
 - install React Router
 - create page components for Home, Game, Game Over, and High Scores
@@ -42,118 +41,134 @@ Here's what you will learn.
 
 ## 2. Styled Components
 
-### Introduction to Styled Components
+### 4. Introduction to Styled Components
 
 
 - what are styled components
 - benefits vs downsides to styled components
 
-### Create Base Styled Components
+### 5. Create Base Styled Components
 
 - create global CSS
-- create utility components like `container`
+- create Main and Container components
 
-## Style the Navbar
+### 6. Style the Navbar
 
 - create Styled Copmonents for Navbar
+- create LinkButton component
+- create Accent component
 
 
-### Style the Home Page
+### 7. Style the Home Page
 
 - create Styled Components for title
-- create Styled Component for Button
+- create Styled Component for CTA
 
-### Style the Game Layout
+### 8. Style the Game Layout
 
 - position Heads Up Display (HUD) for score and timer
 - style HUD and random character
+- add bold styled in global styled
 
 ## 3. Building core Game Functionality with React Hooks
 
-### What and Why of React Hooks
+### 9. What and Why of React Hooks
 
 - what are React Hooks
 - why are they useful
 
-### Create the Timer Functionality
+### 10. Create the Timer Functionality
 
-- introduction to React Hooks
-- using `setInterval` with React Hooks
 - use `useEffect` to start timer
+- use `setInterval` inside of `useEffect`
+- add the logic to update timer
+- navigate to GameOver page when timer expires
 
-### Track User Keypress Input
+
+### 11. Track User Keypress Input
 
 - add event listener for `keyup`
 - unregistering event listeners in `useEffect`
 
 
-### Track User's Score During Game
+### 12. Track User's Score During Game
 
 - use `useState` to track and update user's score as they play the game
 - update user's score based on keyboard input
+- display random character
 
 ## 4. Using the Context API to Share State Between Copmonents
 
 
-### Introduction to React Context
+### 13. Introduction to React Context
 
 - what is React Context
 - why it's useful/why we need it
 
-### Track User's Score Between Components
+### 14. Track User's Score Between Components
 
 - store user's score in a `ScoreContext` after completing a game
 - display user's score in Game Over page
+- prevent users from navigating directly to Game Over page
 
 
 ## 5. Setup Airtable for Storing High Scores
 
-### Introduction to Airtable
+### 15. Introduction to Airtable
 
 - sign up
 - what is Airtable
 - why we are using it  here
 
-### Airtable Workspace and API
+### 16. Airtable Workspace and API
 
 - create a workspace and base (link an excel doc)
 - explore the Airtable API with postman
 
 ## 6. Serverless Functions to Interact with Airtable
 
-### Introduction to Serverless Functions
+### 17. Introduction to Serverless Functions
 
 - what are serverless functions
 - why we are using them here
 
-### Serverless Function for Retrieving High Scores From Airtable
+### 18. First Lambda function
+- netlify configuration for running netlify-dev
+- create Hello World GET endpoint
+
+Helpful tools - json viewer in Chrome
+
+
+### 19. Serverless Function for Retrieving High Scores From Airtable
 
 - create new GET endpoint
+- store Airtable API credentials in environment variable
 - implement endpoint for retrieving high scores Airtable
-- store API credential in environment variables
 
-### Create Serverless Function for Checking if Score is in the Top 10
+### 20. Create Serverless Function for Checking if Score is in the Top 10
 
 - create new GET endpoint
 - implement logic to determine whether a score is in the top 10
 
 
-### Create Serverless Function for Saving High Score
+### 21. Add Post Functionality for Saving High Score
 
 - create new POST endpoint
 - implement functionality for saving a score to Airtable
 
+Helpful tools - postman
+
 ## 7. Adding Authentication with Auth0
 
-### Introduction to Authentication/Authorization and Auth0
+### 22. Introduction to Authentication/Authorization and Auth0
 - why do we need authentication/authorization
 - what is Auth0 and how does it help
 
-### Sign Up and Create Tenant in Auth0
+### 23. Sign Up and Create Tenant in Auth0
 - sign up for free account
 - create tenant and application for our project
 
-### Implement Authentication in React with Auth0
+### 24. Implement Authentication in React with Auth0
 
 - create React Hook to interact with Auth0 for authentication
 - implement login/logout functionality
