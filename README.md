@@ -26,9 +26,12 @@ Here's what you will learn.
 
 ### Create Starter React Project
 
+
 - use `create-react-app` to generate starter project
+- remove unnecessary boilerplate code
 - create repository in Github
 - connect local code to Github repo
+
 
 
 ### Add routing with React Router
@@ -39,6 +42,7 @@ Here's what you will learn.
 ## 2. Styled Components
 
 ### Introduction to Styled Components
+
 
 - what are styled components
 - benefits vs downsides to styled components
