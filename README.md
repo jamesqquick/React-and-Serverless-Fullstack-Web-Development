@@ -38,7 +38,7 @@ Here's what you will learn.
 
 - install React Router
 - create page components for Home, Game, Game Over, and High Scores
-- create the Navbar components
+- create the Navbar component
 
 ## 2. Styled Components
 
