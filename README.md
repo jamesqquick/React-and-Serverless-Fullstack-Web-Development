@@ -145,16 +145,30 @@ Helpful tools - json viewer in Chrome
 - store Airtable API credentials in environment variable
 - implement endpoint for retrieving high scores Airtable
 
+### Display High Scores in High Scores Page
+
+- create fetch Data hook
+- call serverless function for high score data
+
+
 ### 20. Create Serverless Function for Checking if Score is in the Top 10
 
 - create new GET endpoint
 - implement logic to determine whether a score is in the top 10
+
+### Check whether score is in top 10
+
+- check score for top 10 in Game over
+- create Button component
+- layout for Game Over
 
 
 ### 21. Add Post Functionality for Saving High Score
 
 - create new POST endpoint
 - implement functionality for saving a score to Airtable
+
+
 
 Helpful tools - postman
 
@@ -172,33 +186,39 @@ Helpful tools - postman
 
 - create React Hook to interact with Auth0 for authentication
 - implement login/logout functionality
+- create ButtonLink component
 
-### Require Username in Account Registration
+
+### 25. Require Username in Account Registration
 
 - make username a required field when registering with Auth0
 - what is an Identity Token
-- display username in navbar
+- display username in navbar (where to put it)
 
 ## 8. Add Authentication to Serverless Function for Saving Score
 
-### Include Access Token in Save Score Requests
+### 26.What Are JSON Web Tokens
+
+- what are JSON Web Tokens
+- when are they used and why
+
+### 27. Include Access Token in Save Score Requests
 
 - what is an Access Token
 - configure Auth0 Client to retrieve Access Token
 - update Fetch request to include Access Token
 
-### What Are JSON Web Tokens
 
-- what are JSON Web Tokens
-- when are they used and why
-
-### Retrieve and Validate Access Token
+### 28. Retrieve and Validate Access Token
 
 - create API application in Auth0
 - configure Serverless Function to work with Access Tokens from Auth0
 - parse and validate Access Token before saving score
 
-## 9. Create Light/Dark Mode with Context API and Hooks
+
+
+
+## 10. Create Light/Dark Mode with Context API and Hooks
 
 ### Define Dark and Light Theme
 
