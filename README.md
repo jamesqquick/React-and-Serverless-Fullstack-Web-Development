@@ -68,7 +68,7 @@ Here's what you will learn.
 -   style HUD and random character
 -   add bold styled in global styled
 
-## 3. Building core Game Functionality with React Hooks
+## 3. Game Functionality with React Hooks
 
 ### What and Why of React Hooks
 
