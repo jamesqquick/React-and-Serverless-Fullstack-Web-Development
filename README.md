@@ -6,11 +6,11 @@ In this course, you will build a secure and production-ready fullstack typing ap
 
 Here's what you will learn.
 
--   Modern React using Hooks and the Context API
+-   Modern React including Hooks and the Context API
 -   Source Control with Git/Github
 -   CSS in JSS using Styled Components
--   Data storage in Airtable
--   Build secure applications using Auth0 and JSON Web Tokens
+-   Storing Date using the Airtable API
+-   Securing applications using JSON Web Tokens
 -   Build and Deploying Serverless Functions in Netlify
 -   Creating a Light/Dark Mode
 -   Deploying to Netlify using Continuous Integration
@@ -57,12 +57,12 @@ Here's what you will learn.
 -   create StyledLink component
 -   create Accent component
 
-### 7. Style the Home Page
+### Style the Home Page
 
 -   create Styled Components for title
 -   create Styled Component for CTA
 
-### 8. Style the Game Layout
+### Style the Game Layout
 
 -   position Heads Up Display (HUD) for score and timer
 -   style HUD and random character
