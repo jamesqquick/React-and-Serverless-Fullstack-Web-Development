@@ -9,11 +9,11 @@ Here's what you will learn.
 -   Modern React including Hooks and the Context API
 -   Source Control with Git/Github
 -   CSS in JSS using Styled Components
--   Storing Date using the Airtable API
--   Securing applications using JSON Web Tokens
--   Build and Deploying Serverless Functions in Netlify
--   Creating a Light/Dark Mode
--   Deploying to Netlify using Continuous Integration
+-   Store Data using the Airtable API
+-   Secure applications using JSON Web Tokens
+-   Build and Deploy Serverless Functions in Netlify
+-   Create a Light/Dark Mode
+-   Deploy to Netlify using Continuous Integration
 
 ## 1. Course Overview and Project Setup
 
@@ -70,7 +70,7 @@ Here's what you will learn.
 
 ## 3. Game Functionality with React Hooks
 
-### What and Why of React Hooks
+### Introduction to React Hooks
 
 -   what are React Hooks
 -   why are they useful
@@ -80,25 +80,25 @@ Here's what you will learn.
 -   use `useState` to track the user's score
 -   use `setInterval` to tsimulate increase in score
 
-### Create the Timer Functionality
+### Create Timer Functionality
 
 -   use `useEffect` to start timer
 -   use `setInterval` inside of `useEffect`
 -   add the logic to update timer
 -   navigate to GameOver page when timer expires
 
-### Track User Keypress Input
+### Track User Input on Keypress
 
 -   add event listener for `keyup`
 -   unregistering event listeners in `useEffect`
 
-### Update User's Score Based on Keypress
+### Update User Score Based on Input
 
 -   use `useState` to track and update user's score as they play the game
 -   update user's score based on keyboard input
 -   display random character
 
-## 4. Using the Context API to Share State Between Copmonents
+## 4. React Context API to Share State Between Copmonents
 
 ### Introduction to React Context
 
@@ -111,7 +111,7 @@ Here's what you will learn.
 -   display user's score in Game Over page
 -   prevent users from navigating directly to Game Over page
 
-## 5. Setup Airtable for Storing High Scores
+## 5. Airtable API and Setup
 
 ### Introduction to Airtable
 
@@ -124,14 +124,14 @@ Here's what you will learn.
 -   create a workspace and base (link an excel doc)
 -   explore the Airtable API with postman
 
-## 6. Serverless Functions to Interact with Airtable
+## 6. Serverless Functions for Storing High Scores
 
 ### Introduction to Serverless Functions
 
 -   what are serverless functions
 -   why we are using them here
 
-### First Lambda Function
+### Creating Your First Serverless Function
 
 -   netlify configuration for running `netlify-dev`
 -   create Hello World GET endpoint
@@ -153,25 +153,19 @@ Helpful tools - json viewer in Chrome
 -   create fetch Data hook
 -   call serverless function for high score data
 
-### Create Serverless Function for Checking if Score is in the Top 10
+### Create If Score is in the Top 10
 
 -   create new GET endpoint
 -   implement logic to determine whether a score is in the top 10
 
-### Check whether score is in top 10
-
--   check score for top 10 in Game over
--   create Button component
--   layout for Game Over
-
-### Add Post Functionality for Saving High Score
+### Create Save High Score Serverless Function
 
 -   create new POST endpoint
 -   implement functionality for saving a score to Airtable
 
 Helpful tools - postman
 
-## 7. Adding Authentication with Auth0
+## 7. Add Authentication with Auth0
 
 ### Introduction to Authentication/Authorization and Auth0
 
@@ -183,7 +177,7 @@ Helpful tools - postman
 -   sign up for free account
 -   create tenant and application for our project
 
-### Implement Authentication in React with Auth0
+### Add Authentication in React with Auth0
 
 -   create React Hook to interact with Auth0 for authentication
 -   implement login/logout functionality
@@ -195,12 +189,14 @@ Helpful tools - postman
 -   what is an Identity Token
 -   display username in navbar (where to put it)
 
-## 8. Add Authentication to Serverless Function for Saving Score
+## 8. Add Security Serverless Functions
 
 ### What Are JSON Web Tokens
 
 -   what are JSON Web Tokens
 -   when are they used and why
+
+### What Are Access Tokens
 
 ### Include Access Token in Save Score Requests
 
@@ -226,24 +222,31 @@ Helpful tools - postman
 -   add ability to save user's theme in local storage
 -   create useTheme Hook for accessing them in components
 
-### Toggle Theme
+### Implement Toggle Theme Functionality
 
 -   add toggle theme button to Navbar
 -   update them on button press
 
 ## 10. Hosting in Netlify
 
+### What is Continuous Integration
+
 ### Create Deployment Configurations
 
 -   add Netlify.toml configuration file
 -   add `prod` script in package.json
 
-### Creat and Deploy Your Netlify Site
+### Creat and Deploy Site to Netlify
 
 -   create new website in Netlify
 -   connect to our Github repo
 
 ### 11. Wrap Up
 
--   course summary and what we accomplished
+### What Next
+
 -   next steps and ideas for additional features
+
+### Wrap Up
+
+-   course summary and what we accomplished
