@@ -38,10 +38,10 @@ export default function Game({ history }) {
     };
 
     useEffect(() => {
-        if (seconds <= 0 && ms <= 100) {
-            console.log('/gameOver');
+        if (seconds <= -1) {
+            history.push('/gameOver');
         }
-    }, [seconds, ms]);
+    }, [seconds, ms, history]);
 
     const addLeadingZeros = (str, length) => {
         let zeros = '';
