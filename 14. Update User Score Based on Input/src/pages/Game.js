@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
     StyledGame,
     StyledCharacter,
@@ -47,28 +47,32 @@ export default function Game({ history }) {
 
     useEffect(() => {
         if (seconds <= -1) {
+            //Todo: save the score
             history.push('/gameOver');
         }
     }, [seconds, ms, history]);
 
-    const keyUpHandler = (e) => {
-        console.log(e.key);
-        if (e.key === currentCharacter) {
-            setScore((prevScore) => prevScore + 1);
-        } else {
-            if (score > 0) {
-                setScore((prevScore) => prevScore - 1);
+    const keyUpHandler = useCallback(
+        (e) => {
+            console.log(e.key, currentCharacter);
+            if (e.key === currentCharacter) {
+                setScore((prevScore) => prevScore + 1);
+            } else {
+                if (score > 0) {
+                    setScore((prevScore) => prevScore - 1);
+                }
             }
-        }
-        setRandomCharacter();
-    };
+            setRandomCharacter();
+        },
+        [currentCharacter]
+    );
 
     useEffect(() => {
         document.addEventListener('keyup', keyUpHandler);
         return () => {
             document.removeEventListener('keyup', keyUpHandler);
         };
-    }, []);
+    }, [keyUpHandler]);
 
     const addLeadingZeros = (str, length) => {
         let zeros = '';
