@@ -124,7 +124,13 @@ Here's what you will learn.
 -   create a workspace and base (link an excel doc)
 -   explore the Airtable API with postman
 
-## 6. Serverless Functions for Storing High Scores
+## 6. Netlify and Serverless Functions
+
+## Netlify Init and Setup
+
+-   create a new website in Netlify connected to your repository
+-   create local netlify.toml file for configuration
+-   explore the netlify dashboard
 
 ### Introduction to Serverless Functions
 
@@ -133,7 +139,7 @@ Here's what you will learn.
 
 ### Creating Your First Serverless Function
 
--   netlify configuration for running `netlify-dev`
+-   install `netlify dev` to run site and functions locally
 -   create Hello World GET endpoint
 
 Helpful tools - json viewer in Chrome
