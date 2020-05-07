@@ -126,16 +126,16 @@ Here's what you will learn.
 
 ## 6. Netlify and Serverless Functions
 
+### Introduction to Serverless Functions
+
+-   what are serverless functions
+-   why we are using them here
+
 ## Netlify Init and Setup
 
 -   create a new website in Netlify connected to your repository
 -   create local netlify.toml file for configuration
 -   explore the netlify dashboard
-
-### Introduction to Serverless Functions
-
--   what are serverless functions
--   why we are using them here
 
 ### Creating Your First Serverless Function
 
@@ -158,11 +158,6 @@ Helpful tools - json viewer in Chrome
 
 -   create fetch Data hook
 -   call serverless function for high score data
-
-### Create If Score is in the Top 10
-
--   create new GET endpoint
--   implement logic to determine whether a score is in the top 10
 
 ### Create Save High Score Serverless Function
 
