@@ -166,6 +166,17 @@ Helpful tools - json viewer in Chrome
 
 Helpful tools - postman
 
+### Refactoring Common Airtable Code
+
+-   create an Airtable utils file to share code from
+
+### Save High Score on Game Over
+
+-   attempt to save the user's high score when the game is finished
+-   display message for whether or not the user got a high score
+
+### Game Over Bug Fix and Extra Styling
+
 ## 7. Add Authentication with Auth0
 
 ### Introduction to Authentication/Authorization and Auth0
@@ -184,7 +195,7 @@ Helpful tools - postman
 -   implement login/logout functionality
 -   create ButtonLink component
 
-### Require Username in Account Registration
+### Require Username in Sign Up
 
 -   make username a required field when registering with Auth0
 -   what is an Identity Token
@@ -204,12 +215,15 @@ Helpful tools - postman
 -   what is an Access Token
 -   configure Auth0 Client to retrieve Access Token
 -   update Fetch request to include Access Token
-
-### Retrieve and Validate Access Token
-
 -   create API application in Auth0
--   configure Serverless Function to work with Access Tokens from Auth0
--   parse and validate Access Token before saving score
+
+### Retrieve and Parse Access Token
+
+-   parse Access Token in save high score serverless function
+
+### Validate Access Token
+
+-   use jwks-rsa and jsonwebtoken packages to validate access Token
 
 ## 9. Create Light/Dark Mode with Context API and Hooks
 
@@ -228,19 +242,10 @@ Helpful tools - postman
 -   add toggle theme button to Navbar
 -   update them on button press
 
-## 10. Hosting in Netlify
+## 10. Final Hosting Configurations for Netlify
 
-### What is Continuous Integration
-
-### Create Deployment Configurations
-
--   add Netlify.toml configuration file
--   add `prod` script in package.json
-
-### Creat and Deploy Site to Netlify
-
--   create new website in Netlify
--   connect to our Github repo
+-   environment variables
+-   auth0 callback urls
 
 ### 11. Wrap Up
 
