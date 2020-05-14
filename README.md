@@ -141,6 +141,7 @@ Here's what you will learn.
 
 -   install `netlify dev` to run site and functions locally
 -   create Hello World GET endpoint
+-   connect local code to site in Netlify
 
 Helpful tools - json viewer in Chrome
 
