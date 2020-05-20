@@ -268,10 +268,12 @@ Helpful tools - postman
 -   environment variables
 -   auth0 callback urls
 
-### 10.3 What Next
+## 11. Wrap Up
+
+### 11.1 What Next
 
 -   next steps and ideas for additional features
 
-### 10.4 Wrap Up
+### 11.2 Wrap Up
 
 -   course summary and what we accomplished
