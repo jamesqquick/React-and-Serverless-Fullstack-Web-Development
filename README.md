@@ -208,25 +208,24 @@ Helpful tools - postman
 
 ## 8. Add Security Serverless Functions
 
-### 8.1 What Are JSON Web Tokens
+### 8.1 Introduction to Authorization (JWTs and Access Tokens)
 
 -   what are JSON Web Tokens
+-   what are access tokens
 -   when are they used and why
 
-### 8.2 What Are Access Tokens
-
-### 8.3 Include Access Token in Save Score Requests
+### 8.2 Include Access Token in Save Score Requests
 
 -   what is an Access Token
 -   configure Auth0 Client to retrieve Access Token
 -   update Fetch request to include Access Token
 -   create API application in Auth0
 
-### 8.4 Retrieve and Parse Access Token
+### 8.3 Retrieve and Parse Access Token
 
 -   parse Access Token in save high score serverless function
 
-### 8.5 Validate Access Token
+### 8.4 Validate Access Token
 
 -   use jwks-rsa and jsonwebtoken packages to validate access Token
 
