@@ -5,11 +5,11 @@ const {
 } = require('./utils/auth');
 exports.handler = async (event) => {
     const token = getAccessTokenFromHeaders(event.headers);
-    let user = await validateAccessToken(token);
+    const user = await validateAccessToken(token);
     if (!user) {
         return {
-            statusCode: 401,
-            body: JSON.stringify({ err: 'User is not authorized' }),
+            statusCode: 403,
+            body: JSON.stringify({ err: 'Unauthorized' }),
         };
     }
 
@@ -19,9 +19,9 @@ exports.handler = async (event) => {
             body: JSON.stringify({ err: 'That method is not allowed' }),
         };
     }
-    const name = user['https://learnbuildtype/username'];
 
     const { score } = JSON.parse(event.body);
+    const name = user['https://learnbuildtype/username'];
     if (typeof score === 'undefined' || !name) {
         return {
             statusCode: 400,
@@ -58,7 +58,7 @@ exports.handler = async (event) => {
         return {
             statusCode: 500,
             body: JSON.stringify({
-                err: 'Failed to save score in Airtable',
+                err: 'Failed to save score in Airtabl',
             }),
         };
     }
