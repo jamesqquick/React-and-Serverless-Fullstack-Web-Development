@@ -40,7 +40,7 @@ export default function GameOver({ history }) {
                 console.error(err);
             }
         };
-        if (isAuthenticated) {
+        if (isAuthenticated && score !== -1) {
             saveHighScore();
         }
     }, [score, isAuthenticated]);
