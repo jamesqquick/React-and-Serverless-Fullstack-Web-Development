@@ -35,7 +35,9 @@ export default function Navbar({ toggleTheme }) {
                 )}
                 {isAuthenticated && (
                     <li>
-                        <StyledButtonLink onClick={logout}>
+                        <StyledButtonLink onClick={
+                            () => logout({ returnTo: window.location.origin })
+                        }>
                             Logout
                         </StyledButtonLink>
                     </li>
