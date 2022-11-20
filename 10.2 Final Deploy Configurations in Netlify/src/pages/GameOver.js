@@ -7,7 +7,7 @@ import { useAuth0 } from '../auth';
 export default function GameOver({ history }) {
     const [score] = useScore();
     const [scoreMessage, setScoreMessage] = useState('');
-    const { isAuthenticated, getTokenSilently } = useAuth0();
+    const { isAuthenticated, getTokenSilently, user } = useAuth0();
     if (score === -1) {
         history.push('/');
     }
@@ -19,7 +19,7 @@ export default function GameOver({ history }) {
                 const options = {
                     method: 'POST',
                     body: JSON.stringify({
-                        name: 'asdasfsd',
+                        name: user?.nickname ?? user?.name,
                         score,
                     }),
                     headers: {
